@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login">
+      <h1 id="demo"></h1>
+     Username: <input type="text" id="myText" value="">
+     <br>
+     Password: <input type="password" id="mypass" value="">
+
+<button onclick="myFunction()">Try it</button>
+
+<h1 id="demo"></h1>
+
+    </div>
+<script>
+function myFunction() {
+  var username = document.getElementById("myText").value;
+  var password = document.getElementById("mypass").value;
+
+
+  if((password == 'heythere') && (username = 'admin')){
+    // document.getElementById("demo").innerHTML = "login successful...";
+    window.location.href = "../main/index.html"
+  }else{
+    // document.getElementById("demo").innerHTML = "incorrect pass!!";
+    alert('Invalid ID / Password')
+  }
+  
+  
+}
+</script>
+
+</body>
+</html>
